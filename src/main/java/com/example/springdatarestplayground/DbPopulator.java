@@ -51,6 +51,7 @@ public class DbPopulator implements ApplicationRunner {
                 .address(Address.builder()
                         .addressLine1("100 Oracle Pkwy")
                         .addressLine2("")
+                        .city("Redwood City")
                         .state("CA")
                         .country("USA")
                         .zipCode("94065")
