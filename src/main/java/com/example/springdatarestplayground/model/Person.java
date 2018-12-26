@@ -3,6 +3,7 @@ package com.example.springdatarestplayground.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -27,5 +28,6 @@ public class Person {
     @Size(max = 50)
     private String lastname;
     @NotNull
+    @Valid
     private Address address;
 }
